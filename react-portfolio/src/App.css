@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #F4F1DE;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header */
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  background: #3D405B;
+}
+
+header h1 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #F4F1DE;
+  margin: 0 0 20px 20px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0 20px 20px 0;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 0 10px 5px 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #F4F1DE;
+  margin: 0 10px;
+}
+
+header nav ul li:hover {
+  color: #F4F1DE;
+  background: #E07A5F;
+  border: 2px solid #F2CC8F;
+  border-radius:  10px;
+  font-size: 27px;
+  transition: 0.5s;
+  padding-top: 5px;
+}
+
+/* utility classes */
+.bottom-list-border-footer {
+  border-bottom: 3px solid #E07A5F;
+}
+
+.bottom-list-border {
+  border-bottom: 2px solid #E07A5F;
+}
+
+.left-border {
+  border-left: 1px solid #F2CC8F;
+}
+
+.section-label {
+   font-size: 40px;
+   color: #3D405B;
+   font-weight: bold;
+}
+
+.background-img-placement {
+  background-size: cover;
+  background-position: center;
+}
+
+.border-right {
+   border-right: 5px solid #F2CC8F;
+   padding-right: 0.3em;
+}
+
+/* Footer */
+footer {
+  height: 400px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  margin-bottom: 90px;
+}
+
+footer ul li {
+  display: inline;
+  font-size: 36px;
+  font-weight: bold;
+  color: #3D405B;
+  margin: 0 40px;
+  padding: 0 10px 10px 10px;
+}
+
+footer ul li:hover {
+  color: #F4F1DE;
+  background: #3D405B;
+  border: 2px solid #E07A5F;
+  border-radius:  10px;
+  font-size: 42px;
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* About Me */
+.about-me-container {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.about-me-wrapper {
+  width: 66.66%;
+  border: 5px solid #F2CC8F;
+  padding: 5rem;
+  box-shadow: 5px 10px 5px #f2cc8f9b;
+  background-color: #3D405B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-me-wrapper p {
+  color: #F4F1DE;
+  font-size: 25px;
+  padding: 0;
 }
