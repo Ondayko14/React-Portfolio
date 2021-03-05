@@ -316,6 +316,15 @@ footer a {
      padding-right: 0.3em;
  }
 
+ .contactBg {
+   background: #3D405B;
+   color: #F2CC8F;
+ }
+
+ .contactBg label {
+   color: #F2CC8F;
+ }
+
  /* Media Queries */
 
  @media only screen and (max-width: 1396px) {
