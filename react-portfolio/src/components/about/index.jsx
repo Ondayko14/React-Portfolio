@@ -5,10 +5,10 @@ function About() {
     <div class="about-me-container">
       <h1>About Me</h1>
       <article class="about-me-wrapper" id="About">
-          <p>I am a Front-End Developer currently enrolled in the Vanderbilt Coding Bootcamp.</p> 
-          <p> I have experience in HTML/CSS and Javascript. Application development is a passion</p>
-          <p> and a dream of mine, and it feels so good to get to do it on a daily basis. I hope you</p>
-          <p> enjoy browsing my projects and if you have any questions, please feel free to contact me.</p>
+          <p>I am a Full Stack Developer currently enrolled in the Vanderbilt Coding Bootcamp.</p> 
+          <p> I have experience in Javascript/Node/NOSQL/SQL/React/Vue along with several CSS frameworks.</p> 
+          <p>Application development is a passion of mine, and it feels so good to get to do it on a daily basis.</p>
+          <p>I hope you enjoy browsing my projects and if you have any questions, please feel free to contact me.</p>
       </article>
     </div>
   );

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import About from './components/about';
 import Nav from './components/nav';
 import Footer from './components/footer';
+import Projects from './components/projects';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div>
       <Nav />
       <main>
+        <Projects />
         <About />
       </main>
       <Footer />
