@@ -1,6 +1,11 @@
 import { useState } from "react";
 import React from 'react';
 
+function onWork() {
+    console.log('work');
+
+}
+
 function Nav() {
 
   return (
@@ -13,7 +18,11 @@ function Nav() {
                     About Me
                     </li>
                 </a>
-                <a href="#work" class="nav-animation">
+                <a href="#work" 
+                onClick={() => {
+                  onWork()
+                }} 
+                class="nav-animation">
                     <li class="bottom-list-border">
                     Work
                     </li>
