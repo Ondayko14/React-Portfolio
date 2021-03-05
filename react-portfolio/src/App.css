@@ -63,80 +63,86 @@ header nav ul li:hover {
 }
 
 .hero h2 {
-    font-size: 45px;
-    margin: 0 50px 50px 0;
-    background: #E07A5F;
-    color: #F4F1DE;
-    padding:  10px 85px;
-    text-align: center;
+  font-size: 45px;
+  margin: 0 50px 50px 0;
+  background: #E07A5F;
+  color: #F4F1DE;
+  padding:  10px 85px;
+  text-align: center;
 }
 
 /* content wrapper */
 .content-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 100px 50px 10px 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 50px 10px 50px;
     
 }
 
 /* labels */
 .labels {
-    display: flex;
-    flex-direction: column;
-    width: 250px;
-    font-size: 45px;
-    text-align: right;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  font-size: 45px;
+  text-align: right;
+  justify-content: space-between;
 }
 
 .labels h3 {
-    color: #3D405B;
+  color: #3D405B;
 }
 
 .section-label1 {
-    height: 4.5em;
+  height: 4.5em;
 }
 
 .section-label2 {
-    height:20em;
-    margin-bottom: 1em;
+  height:20em;
+  margin-bottom: 1em;
 }
 
 .section-label3 {
-    height: 5em;
+  height: 5em;
 }
 
 .section-label2 h3 {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 .section-label3 h3 {
-    padding-top: 0.5em;
+  padding-top: 0.5em;
 }
 /* right side */
 .right-side {
-    margin-left: 50px;
-    padding: 0 30px 0 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+  margin-left: 50px;
+  padding: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* article */
 .about-me-wrapper p {
-    color: #3D405B;
-    font-size: 25px;  
-    line-height: 1.7; 
+  color: #3D405B;
+  font-size: 25px;  
+  line-height: 1.7; 
+}
+
+.about-me-container {
+  padding-top: 2rem;
+  padding-left: 10rem;
 }
 
 /* work */
 .work-grid-wrapper {
-    margin: 140px 30px 0 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 30px 30px;
+  padding-left: 10rem;
+  margin: 140px 30px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px 30px;
 }
 
 .item1 {
