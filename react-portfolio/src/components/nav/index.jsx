@@ -1,25 +1,19 @@
+import { useState } from "react";
 import React from 'react';
 
 function Nav() {
-    const scrollToAbout = () => {
-        window.scrollTo(0,500)
-      }
-
-    const scrollToWork = () => {
-        window.scrollTo(0,1000)
-      }
 
   return (
 <header>
         <h1>Brandon Ondayko</h1>
         <nav>
             <ul>
-                <a href="#about" onClick={scrollToAbout} class="nav-animation">
+                <a href="#about" class="nav-animation">
                     <li class="bottom-list-border">
                     About Me
                     </li>
                 </a>
-                <a href="#work" onClick={scrollToWork} class="nav-animation">
+                <a href="#work" class="nav-animation">
                     <li class="bottom-list-border">
                     Work
                     </li>

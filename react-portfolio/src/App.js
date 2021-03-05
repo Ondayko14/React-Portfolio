@@ -7,16 +7,29 @@ import Hero from './components/hero';
 import Contact from './components/contact';
 import './App.css';
 
+const Page = ({ name }) => {
+  switch (name) {
+    case 'About':
+      return <About />;
+    case 'Work':
+      return <Projects />;
+    case 'Contact':
+      return <Contact />;
+    default:
+      return <About/>;
+  }
+}
+
 function App() {
+  const [currentPage, setCurrentPage] = useState('About');
+  const handlePageChange = (value) => setCurrentPage(value);
+
   return (
     <div>
-      <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
+      <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div>
+        <Page name={currentPage} />
+      </div>
       <Footer />
     </div>
   );
