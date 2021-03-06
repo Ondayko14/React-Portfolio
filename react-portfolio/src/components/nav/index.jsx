@@ -1,44 +1,45 @@
-import { useState } from "react";
-import React from 'react';
+import { React } from "react";
 
-function onWork() {
-    console.log('work');
-
-}
-
-function Nav() {
-
+function Nav({ handlePageChange }) {
   return (
-<header>
-        <h1>Brandon Ondayko</h1>
-        <nav>
-            <ul>
-                <a href="#about" class="nav-animation">
-                    <li class="bottom-list-border">
-                    About Me
-                    </li>
-                </a>
-                <a href="#work" 
-                onClick={() => {
-                  onWork()
-                }} 
-                class="nav-animation">
-                    <li class="bottom-list-border">
-                    Work
-                    </li>
-                </a>
-                <a href="#contact" class="nav-animation">
-                    <li class="bottom-list-border">
-                    Contact
-                    </li>    
-                </a>
-                <a href="" target="_blank" class="nav-animation">
-                    <li class="bottom-list-border">
-                    Resume
-                    </li>
-                </a>
-            </ul>
-        </nav>
+    <header>
+      <h1>Brandon Ondayko</h1>
+      <nav>
+        <ul>
+          <li
+            className="bottom-list-border"
+            onClick={() => {
+              handlePageChange("About");
+            }}
+          >
+            About Me
+          </li>
+          <li
+            className="bottom-list-border"
+            onClick={() => {
+              handlePageChange("Work");
+            }}
+          >
+            Work
+          </li>
+          <li
+            className="bottom-list-border"
+            onClick={() => {
+              handlePageChange("Contact");
+            }}
+          >
+            Contact
+          </li>
+          <a
+            href="#resume"
+            rel="noreferrer"
+            target="_blank"
+            className="nav-animation"
+          >
+            <li className="bottom-list-border">Resume</li>
+          </a>
+        </ul>
+      </nav>
     </header>
   );
 }
